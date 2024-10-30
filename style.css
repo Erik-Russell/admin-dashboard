@@ -19,10 +19,29 @@ body {
   grid-row: 1 / 3;
   padding: 10px;
   background-color: red;
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 50px 1fr 2fr;
+}
+
+.list {
+  border: 1px solid blue;
+}
+
+.logo {
+  margin-bottom: 50px;
 }
 
 .nav ul {
   list-style-type: none;
+}
+
+.nav-list {
+  margin-bottom: 50px;
+}
+
+.settings-list{
+  margin-bottom: 50px;
 }
 
 .header {
