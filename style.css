@@ -18,7 +18,7 @@ body {
   grid-column: 1;
   grid-row: 1 / 3;
   padding: 10px;
-  background-color: red;
+  background-color: pink;
   display: grid;
   grid-template-columns: 1;
   grid-template-rows: 50px 1fr 2fr;
@@ -48,12 +48,207 @@ body {
   grid-column: 2;
   grid-row: 1;
   padding: 10px;
-  background-color: blue;
+  background-color: lightblue;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: 4fr 5fr;
+}
+
+/* Container for the search bar */
+.search-container {
+  display: flex;
+  justify-content: left;
+  padding: 10px;
+}
+
+/* Styling for the form */
+.search-container form {
+  display: flex;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+/* Styling for the search input */
+.search-input {
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  width: 250px; /* Adjust width as needed */
+}
+
+/* Styling for the search button */
+.search-button {
+  background-color: #393f4d;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Hover effect for the search button */
+.search-button:hover {
+  background-color: #565d6e;
+}
+
+@media (max-width: 600px) {
+  .search-input {
+    width: 100px;
+  }
+}
+
+.profile-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+/* Container for the notification button */
+.notification-button {
+  position: relative;
+  display: inline-block;
+}
+
+/* Button styling */
+.notification-button button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  padding: 0;
+  outline: none;
+}
+
+/* SVG icon styling */
+.notification-button svg {
+  color: #393f4d;
+  width: 24px;
+  height: 24px;
+}
+
+.notification-button button:hover svg {
+  color: #565d6e;
+}
+
+/* Container for the avatar */
+.profile-avatar {
+  width: 24px; /* Adjust size as needed */
+  height: 24px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+  border: 2px solid #ccc; /* Optional border */
+}
+
+/* Image styling */
+.profile-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hello-splash {
+  display: flex;
+  gap: 10px;
+  justify-content: left;
+  align-items: center;
+}
+
+.splash-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+  border: 2px solid #ccc;
+}
+
+.splash-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.splash-greeting {
+  font-size: 1rem;
+}
+
+.splash-greeting span {
+  font-size: 1.2rem;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-menu ul {
+  display: flex;
+  flex-direction: horizontal;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header-menu li {
+  margin: 0 10px;
+  padding: 5px 20px;
+  background-color: white;
+  border-radius: 20px;
 }
 
 .main {
   grid-column: 2;
   grid-row: 2 / 3;
   padding: 10px;
-  background-color: green;
+  background-color: lightgreen;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px;
+}
+
+.main :nth-child(1) {
+  background-color: lightyellow;
+}
+
+.heading {
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.projects-container {
+  grid-column: 1;
+  grid-row: 1 / -1;
+}
+
+.projects {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-content: center;
+}
+
+.project-card {
+  height: 90px;
+  margin: 5px;
+  padding: 10px;
+  display: flex;
+  border: 1px solid #ddd;
+  box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.1);
+}
+
+.announcement-container {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.contacts-container {
+  grid-column: 2;
+  grid-row: 2;
 }

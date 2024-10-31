@@ -23,8 +23,68 @@
         <li>Privacy</li>
       </ul>
     </div>
-    <div class="header">Header</div>
-    <div class="main">Main</div>
+    <div class="header">
+      <div class="search-container">
+        <form action="/search" method='GET'>
+          <input type="text" 
+           name='query' 
+           placeholder='Search...' 
+           class='search-input' />
+          <button type='submit' class='search-button'>🔍</button>
+        </form>
+      </div>
+      <div class="profile-container">
+        <div class='notification-button'>
+          <button>
+            <!-- SVG bell icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell">
+              <path d="M18 8a6 6 0 0 0-12 0c0 7-3 8-3 8h18s-3-1-3-8"></path>
+              <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+            </svg>
+          </button>
+        </div>
+        <div class='profile-avatar'>
+          <img src="images/user-avatar.jpg" alt="User Avatar" />
+        </div>
+        <div class='profile-name'>Hideo Kojima</div>
+      </div>
+      <div class="hello-splash">
+        <div class="splash-avatar">
+          <img src="images/user-avatar.jpg" alt="User Avatar" />
+        </div>
+        <div class="splash-greeting">Hi there,<br>
+          <span>Hideo Kojima (@hkojima)</span>
+        </div>
+      </div>
+      <div class="header-menu">
+        <ul>
+          <li>New</li>
+          <li>Upload</li>
+          <li>Share</li>
+        </ul>
+      </div>
+    </div> <!-- end header -->
+    <div class="main">
+      <div class="projects-container">
+        <div class="heading">Your Projects</div>
+        <div class="projects content">
+          <div class="project-card">Super Cool Project</div>
+          <div class="project-card">Less Cool Project</div>
+          <div class="project-card">Impossible App</div>
+          <div class="project-card">Easy Peasy App</div>
+          <div class="project-card">Ad Blocker</div>
+          <div class="project-card">Money Maker</div>
+        </div>
+      </div>
+      <div class="announcement-container">
+        <div class="heading">Announcements</div>
+        <div class="announcements content"></div>
+      </div>
+      <div class="contacts-container">
+        <div class="heading">Contacts</div>
+        <div class="contacts content"></div>
+      </div>
+    </div>
   </div>
 </body>
 </html>
